@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+JP&display=swap');
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  font-size: 300%;
+  margin-bottom: -3vh;
+}
+
+h4 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: bold;
+  text-align: center;
+  background-color: #a8e9ff;
+}
+
+h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: bold;
+  text-align: center;
+  font-size: 200%;
+  background-color: #ebfaff;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: bold;
+  text-align: center;
+  font-size: 200%;
+  color: #a8e9ff;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+li, p {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#directions li span {
+  font-style: italic;
+}
+
+.highlight {
+  background-color: #a8e9ff;
+}
+
+#ingredients li { 
+  font-family: Arial;
+}
+
+
+#ingredients li:nth-child(9) {
+  color: red;
+}
+
+#credit {
+  text-align: center;
+  padding-top: 40%;
+}
+
+#ingredients, #equipment, #directions {
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  width: 30%;
+  height: 9vh;
+  margin: 1%;
+  border: solid 2px;
+  background-color: #ebfaff;
+}
+
+
+#image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (orientation:portrait) {
+  
+  body {
+  background-color: black;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 200%;
+  }
+  
+  h3 {
+    font-size: 150%;
+  }
+  
+  #ingredients, #equipment, #directions {
+    width: 100vw;
+    height: auto;
+    border-color: white;
+  }
+  
+  #credit p {
+    color: white;
+  }
+}
+
+@media (max-width:575px) {
+  
+  #ingredients, #equipment, #directions {
+    border: #a8e9ff solid 6px;
+  }
+  
+}
+
+.title {
+  color: black;
+}
+
+/* for java */
+#titleBanner h1.clicked {
+  color: blue;
+}
+
+div#ingredients.ingredientsClicked {
+  height: 100vh;
+}
+
+div#equipment.equipmentClicked {
+  height: 100vh;
+}
+
+div#directions.directionsClicked {
+  height: 100vh;
+}
