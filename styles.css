@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+JP&display=swap');
 
+#nav {
+  background-color: #a8e9ff;
+}
+
+#nav a {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 100%;
+  color: black;
+  padding-right: 2vw;
+}
+
 h1 {
   font-family: 'Abril Fatface', cursive;
   text-align: center;
@@ -72,13 +83,18 @@ li, p {
 }
 
 
-#image {
-  width: 100%;
+#picture {
+  width: 120vh;
   max-width: 1000px;
-  height: auto;
+  height: 120vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#picture img {
+  width: 50vw;
+  height: auto;
 }
 
 @media (orientation:portrait) {

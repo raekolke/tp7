@@ -55,9 +55,37 @@ function loadFileInto(fromFile, whereTo) {
 
 }
 
-window.onload = function() {
-	loadFileInto("ingredients.html", "ingredients");
-	loadFileInto("equipment.html", "equipment");
-  loadFileInto("directions.html", "directions");
-};
+// object constructor for recipe
+function Recipe(recipeName, imageURL, contributorName, ingredientsFilename, equipmentFilename, directionsFilename) {
+  this.name = recipeName;
+  this.imgsrc = imageURL;
+  this.contributor = contributorName;
+  this.ingFile = ingredientsFilename;
+  this.equipFile = equipmentFilename;
+  this.dirFile = directionsFilename;
+  
+  // update screen with objects information
+  this.displayRecipe = function() {
+    document.querySelector("#titleBanner h1").innerHTML = this.name;
+    document.querySelector("#titleBanner h2").innerHTML = "Contributed by: " + this.contributor;
+    document.querySelector("#picture").style.backgroundImage = "url(" + this.imgsrc + ")";
+    loadFileInto(this.ingFile, "ingredients");
+    loadFileInto(this.equipFile, "equipment");
+    loadFileInto(this.dirFile, "directions");
+  }
+}
+
+SpicedTofu = new Recipe(
+  "Breaded, Fried, Softly Spiced Tofu",
+  "https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+  "Rae Kolke",
+  "ingredients.html",
+  "equipment.html",
+  "directions.html"
+);
+
+
+
+
+
 
