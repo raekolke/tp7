@@ -22,11 +22,6 @@ listClick3.onclick = function() {
   listClick3.classList.toggle("directionsClicked");
 }
 
-x = document.getElementById("enjoy");
-x.innerHTML = "Enjoy!";
-x.style.fontSize = '40px';
-x.style.fontFamily = 'Noto Sans JP';
-x.style.textAlign = 'center';
 
 // generic AJAX function to load fromFile into object with ID whereTo
 function loadFileInto(fromFile, whereTo) {
@@ -84,6 +79,14 @@ SpicedTofu = new Recipe(
   "directions.html"
 );
 
+chicken = new Recipe(
+  "Lemon Chicken Piccata",
+  "https://images.unsplash.com/photo-1558574869-8c0caa518dd4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80",
+  "Sophie Dutton",
+  "chicken-ingredients.html",
+  "chicken-equipment.html",
+  "chicken-directions.html"
+);
 
 
 

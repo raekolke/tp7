@@ -141,13 +141,13 @@ li, p {
 }
 
 div#ingredients.ingredientsClicked {
-  height: 100vh;
+  height: 120vh;
 }
 
 div#equipment.equipmentClicked {
-  height: 100vh;
+  height: 120vh;
 }
 
 div#directions.directionsClicked {
-  height: 100vh;
+  height: 120vh;
 }
